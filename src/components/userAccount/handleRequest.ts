@@ -98,8 +98,6 @@ export const handleRequest = (url: string, method: methodType, user: UserChange 
 
             setLoggedIn(true);
             setMistake(false);
-
-            window.location.assign('/');
         }
     })
     .catch((err) => {
