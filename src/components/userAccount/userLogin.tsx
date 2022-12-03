@@ -49,8 +49,8 @@ const Login: React.FC = () => {
                 }} clearInput={true} value={password} id="password" placeholder="Enter password" required={true} />
                 <p id="warning">{!message && !mistake && <br></br>} {message} {mistake && "Incorrect password or username"}</p>
                 <IonButton type="submit" expand="block" id="button">Login</IonButton>
-                <a id="create" href="/account/create"><p>create an account</p></a>
-                <a id="forgot" href="/account/change"><p>change password</p></a>
+                <a id="create" href="/account_create"><p>create an account</p></a>
+                <a id="forgot" href="/account_change"><p>change password</p></a>
             </form>}
             {loggedIn && 
             <div>
