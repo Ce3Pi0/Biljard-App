@@ -46,13 +46,15 @@
       var pathSegmentsToKeep = 2;
 
       
+
       var l = window.location;
 
-      const test = l.pathname.slice(12)
+      const test = l.pathname.slice(12).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '')
 
-      console.log(test);
-      console.log(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/Biljard-App/?' + l.pathname.slice(12).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : ''));
+      console.log(l);
+      // l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '')).hash;
+      console.log(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/Biljard-App/?' + test);
       
 //       l.replace(
 //         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
