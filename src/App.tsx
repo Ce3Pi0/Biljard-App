@@ -42,7 +42,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <GlobalProvider>
     <IonApp>
-      <IonReactRouter basename='Biljard-App'>
+      <IonReactRouter basename='/Biljard-App'>
         <IonTabs>
           <IonRouterOutlet>
             <Route exact path="/home">
