@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Biljard-App/static/css/main.17640518.css",
-    "main.js": "/Biljard-App/static/js/main.2ef83b17.js",
+    "main.js": "/Biljard-App/static/js/main.5e9fbafd.js",
     "static/js/738.49829442.chunk.js": "/Biljard-App/static/js/738.49829442.chunk.js",
     "static/js/372.c231d777.chunk.js": "/Biljard-App/static/js/372.c231d777.chunk.js",
     "static/js/856.59dbdeb0.chunk.js": "/Biljard-App/static/js/856.59dbdeb0.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/dart.png": "/Biljard-App/static/media/dart.7fcbb3ea8bd02b493d4b.png",
     "index.html": "/Biljard-App/index.html",
     "main.17640518.css.map": "/Biljard-App/static/css/main.17640518.css.map",
-    "main.2ef83b17.js.map": "/Biljard-App/static/js/main.2ef83b17.js.map",
+    "main.5e9fbafd.js.map": "/Biljard-App/static/js/main.5e9fbafd.js.map",
     "738.49829442.chunk.js.map": "/Biljard-App/static/js/738.49829442.chunk.js.map",
     "372.c231d777.chunk.js.map": "/Biljard-App/static/js/372.c231d777.chunk.js.map",
     "856.59dbdeb0.chunk.js.map": "/Biljard-App/static/js/856.59dbdeb0.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.17640518.css",
-    "static/js/main.2ef83b17.js"
+    "static/js/main.5e9fbafd.js"
   ]
 }
