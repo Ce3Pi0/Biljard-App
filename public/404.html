@@ -47,6 +47,8 @@
 
       var l = window.location;
        
+      l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '')).hash;
+      
       console.log(l);
       
 //       l.replace(
