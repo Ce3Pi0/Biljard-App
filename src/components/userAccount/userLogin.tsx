@@ -6,10 +6,6 @@ import { contextInterface, GlobalContext } from "../../context/Context";
 import { UserLogin } from "../../interfaces/interfaces";
 import { handleRequest } from "./handleRequest";
 
-// const loginRequest = async (user: UserLogin) => {
-//     return handleRequest("http://127.0.0.1:5000/users/login", "POST", user)
-// }
-
 const Login: React.FC = () => {
 
     const { loggedIn, setLoggedIn } = useContext(GlobalContext) as contextInterface;
