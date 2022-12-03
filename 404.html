@@ -47,8 +47,8 @@
 
       var l = window.location;
 
-      const test = l.pathname.slice(12).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '')
+      const test = l.pathname; //.slice(12).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        // (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '')
 
       console.log(l);
       // l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '')).hash;
