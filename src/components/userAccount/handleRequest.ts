@@ -71,7 +71,7 @@ export const handleRequest = (url: string, method: methodType, user: UserChange 
             .catch(e => {
                 if (window.localStorage.getItem('logged_in') === "true"){
                     window.alert("Session expired!");
-                    window.location.assign('/account');
+//                     window.location.assign('/account');
                     window.localStorage.clear();    
                 }
             })}
@@ -86,9 +86,10 @@ export const handleRequest = (url: string, method: methodType, user: UserChange 
         if (instanceOfUserChange(user) && json.message === "Properties updated successfully!"){
             setMistake(false);
             setMessage('');
-            window.location.assign('/');
+            window.location.assign('/Biljard-Thing');
         } else if (instanceOfUserRegister(user)){
-            window.location.assign('/account');
+            window.location.reload()
+//             window.location.assign('/account');
         }
          else if (!instanceOfUserChange(user) && !instanceOfUserRegister(user)){
             window.localStorage.setItem("username", json.username);
