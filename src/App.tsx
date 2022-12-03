@@ -51,10 +51,10 @@ const App: React.FC = () => (
             <Route exact path="/account">
               <Account />
             </Route>
-            <Route exact path="/account/create">
+            <Route exact path="/account_create">
               <CreateAccount/>
             </Route>
-            <Route exact path="/account/change">
+            <Route exact path="/account_change">
               <ChangeAccount />
             </Route>
             <Redirect exact from="/" to="/home" />
