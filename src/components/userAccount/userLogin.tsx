@@ -56,7 +56,7 @@ const Login: React.FC = () => {
             <div>
                 <h2> You are already logged in!</h2>
                 <IonButton expand="block" onClick={() => logOut()}>Logout</IonButton>
-                <IonButton expand="block" onClick={() => history.push('/account/change')}>change Password</IonButton>
+                <IonButton expand="block" onClick={() => history.push('/account_change')}>change Password</IonButton>
             </div>
             }
         </div>
