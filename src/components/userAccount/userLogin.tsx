@@ -49,9 +49,9 @@ const Login: React.FC = () => {
                 }} clearInput={true} value={password} id="password" placeholder="Enter password" required={true} />
                 <p id="warning">{!message && !mistake && <br></br>} {message} {mistake && "Incorrect password or username"}</p>
                 <IonButton type="submit" expand="block" id="button">Login</IonButton>
-                <IonButton expand="block" onClick={() => history.push('/account_create')}>Create Account</IonButton>
-                { /*<a id="create" href="/account_create"><p>create an account</p></a>
-                <a id="forgot" href="/account_change"><p>change password</p></a> */}
+                {/* <IonButton expand="block" onClick={() => history.push('/account_create')}>Create Account</IonButton> */}
+                <a id="create" href="/Biljard-App/account_create"><p>create an account</p></a>
+                <a id="forgot" href="/Biljard-App/account_change"><p>change password</p></a> 
             </form>}
             {loggedIn && 
             <div>
