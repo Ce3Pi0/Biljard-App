@@ -77,7 +77,7 @@ http://ionicframework.com/docs/theming/ */
 }
 
 #form{
-  background: var(--ion-color-dark-shade);
+  background: var(--ion-color-light-shade);
 }
 
 @media (prefers-color-scheme: dark) {
