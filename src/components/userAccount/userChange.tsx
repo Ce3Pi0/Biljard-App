@@ -73,6 +73,11 @@ const Change: React.FC = () => {
                 <IonButton type="submit" expand="block" id="button">Change</IonButton>
             </form>}
             {!loggedIn && <div>
+                <IonFab horizontal="start" vertical="top">
+                    <IonFabButton size={"small"} onClick={() => history.push('/account')}>
+                        <IonIcon icon={arrowBack}></IonIcon>
+                    </IonFabButton>
+                </IonFab>
                 <h2> You aren't logged in!</h2>
                 <IonButton expand="block" onClick={() => history.push('/account')}>Login</IonButton>
             </div>}
