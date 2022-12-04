@@ -122,10 +122,10 @@ const Table: React.FC<{name: string, price:number, type:string, start_time:strin
                     <p style={{color: "#bfbfbf"}}>Type: {type}</p>
                     <h1>Name: {name}</h1>
                     <p>Price per hour: {price}</p>
-                    <div id="flexBox">
+                    {/*<div id="flexBox">*/}
                         <h1>Total Price:{currPrice}</h1>
                         <h1 id='time'>Time:{time}</h1>
-                    </div>
+                    {/*</div> */}
                     <br/>
 
                 </IonLabel>
