@@ -96,6 +96,8 @@ export const handleRequest = (url: string, method: methodType, user: UserChange 
             window.localStorage.setItem("session_id", json.access_token);
             window.localStorage.setItem("refresh_token", json.refresh_token);
             window.localStorage.setItem("id", json.id);
+             
+            window.location.asign('/Bilijard-App')
 
             setLoggedIn(true);
             setMistake(false);
