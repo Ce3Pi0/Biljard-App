@@ -22,7 +22,7 @@ const Table: React.FC<{name: string, price:number, type:string, start_time:strin
 
         hrs = Math.floor(dif/1000/60/60);
         mins = Math.floor(dif/1000/60) - (60 * hrs);
-        secs = Math.floor(dif/1000) - (60 * mins);
+        secs = Math.floor(dif/1000) - (60 * mins) - (3600 * hrs);
         if(start_time === null) return
         
         hrs = hrs < 10? '0'+hrs: hrs;
@@ -40,7 +40,7 @@ const Table: React.FC<{name: string, price:number, type:string, start_time:strin
     const calcPrice = (end: any, start: any) => {
         let dif = end - start;
 
-        return Math.round(price / 60) * Math.round(Math.abs(dif/ 1000/60));
+        return Math.round((price / 60) * Math.abs(dif/ 1000/60));
     }
 
     const calcPriceInterval = () => {
