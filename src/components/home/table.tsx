@@ -124,7 +124,8 @@ const Table: React.FC<{name: string, price:number, type:string, start_time:strin
                     <p>Price per hour: {price}</p>
                     {/*<div id="flexBox">*/}
                         <h1>Total Price:{currPrice}</h1>
-                        <h1 id='time'>Time:{time}</h1>
+                    {/*<h1 id='time'>Time:{time}</h1>*/}
+                        <h1>Time:{time}</h1>
                     {/*</div> */}
                     <br/>
 
