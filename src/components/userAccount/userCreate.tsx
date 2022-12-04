@@ -6,9 +6,6 @@ import { arrowBack } from "ionicons/icons";
 import { UserRegister } from "../../interfaces/interfaces";
 import { handleRequest } from "./handleRequest";
 
-// const registerRequest = async (user: UserRegister) => {
-//     return handleRequest("http://127.0.0.1:5000/users/register", "POST", user);
-// }
 
 const Register: React.FC = () => {
 
@@ -72,7 +69,7 @@ const Register: React.FC = () => {
                 {userExists && !message && <p id="warning">User already exists!</p>}
                 {!userExists && message && <p id="warning">{message}</p>}
                 {!userExists && !message && <br />}
-                <IonButton type="submit" expand="block" id="button">Register</IonButton>
+                <IonButton type="submit" expand="block" id="button">Create</IonButton>
             </form>}
             {loggedIn && <div>
                 <h1>You are already logged in!</h1>
