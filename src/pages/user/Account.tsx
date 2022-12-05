@@ -12,7 +12,7 @@ const Account: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle slot="start">Login</IonTitle>
+          {!loggedIn && <IonTitle slot="start">Login</IonTitle>}
           {loggedIn && <IonTitle slot="end">Welcome, {window.localStorage.getItem("username")}!</IonTitle>}
         </IonToolbar>
       </IonHeader>
